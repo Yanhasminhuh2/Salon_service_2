@@ -1,5 +1,5 @@
 const CONFIG = {
-    scriptURL: 'YOUR_APPS_SCRIPT_URL',
+    scriptURL: 'https://script.google.com/macros/s/AKfycbyMG3Xs-qn54HciV2C_FHU6uvzVUVy0xIaOmAlD6jZ_J3bDzFpbhvYI_J-yhRf9nnGszQ/exec',
     groups: ['Cat', 'Uon', 'Nhuom', 'Phu', 'Overall']
 };
 
