@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base target="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --star-size: 40px;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .question-card {
+            margin: 25px 0;
+            padding: 20px;
+            border-left: 4px solid var(--secondary-color);
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .question-text {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .stars-container {
+            display: flex;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .star {
+            cursor: pointer;
+            font-size: var(--star-size);
+            color: #ddd;
+            transition: all 0.3s;
+        }
+
+        .star.active {
+            color: #ffd700;
+            transform: scale(1.1);
+        }
+
+        #submit-btn {
+            background: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: block;
+            margin: 30px auto 0;
+            transition: background 0.3s;
+        }
+
+        #submit-btn:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="questions-container"></div>
+        <button id="submit-btn" onclick="handleSubmit()">GỬI ĐÁNH GIÁ</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
